@@ -1,17 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <ChildGreeting fistName="john" />
+  <ChildGreeting fistName="jane" />
+  <ChildGreeting fistName="jack" />
+  <ChildGreeting fistName="dave" />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ChildGreeting from "./components/ChildGreeting.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    ChildGreeting,
+  },
+};
 </script>
 
 <style>
